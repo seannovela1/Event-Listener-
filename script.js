@@ -36,4 +36,8 @@ function updateBalloonSize() {
 // Event listener for keydown to detect arrow keys
 document.addEventListener('keydown', function (event) {
     // Check which key was pressed
-    if (event.key === 'ArrowUp') 
+    if (event.key === 'ArrowUp') {
+        // Inflate balloon (increase size by 10%)
+        currentSize *= 1.1;
+        updateBalloonSize();
+    } 
