@@ -23,3 +23,6 @@
 
 // Get the balloon element
 const balloon = document.getElementById('balloon');
+
+// Set initial size of the balloon (in px)
+let currentSize = 100; // This corresponds to 100% size, changeable based on keypresses
