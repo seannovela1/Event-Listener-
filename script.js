@@ -40,4 +40,9 @@ document.addEventListener('keydown', function (event) {
         // Inflate balloon (increase size by 10%)
         const currentSize = parseFloat(balloon.style.fontSize);
         balloon.style.fontSize = (currentSize * 1.1) + "px";
-    } else if (event.key === "ArrowDown")
+    } else if (event.key === "ArrowDown")  {
+        // Deflate the balloon by 10%
+        const currentSize = parseFloat(balloon.style.fontSize);
+        balloon.style.fontSize = (currentSize * 0.9) + "px";
+    }
+});
