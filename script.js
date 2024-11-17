@@ -26,3 +26,9 @@ const balloon = document.getElementById('balloon');
 
 // Set initial size of the balloon (in px)
 let currentSize = 100; // This corresponds to 100% size, changeable based on keypresses
+
+
+// Function to update the size of the balloon
+function updateBalloonSize() {
+    balloon.style.fontSize = currentSize + 'px'; // Set the font size (in px)
+} 
