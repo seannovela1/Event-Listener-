@@ -32,3 +32,8 @@ let currentSize = 100; // This corresponds to 100% size, changeable based on key
 function updateBalloonSize() {
     balloon.style.fontSize = currentSize + 'px'; // Set the font size (in px)
 } 
+
+// Event listener for keydown to detect arrow keys
+document.addEventListener('keydown', function (event) {
+    // Check which key was pressed
+    if (event.key === 'ArrowUp') 
