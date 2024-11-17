@@ -38,6 +38,6 @@ document.addEventListener('keydown', function (event) {
     // Check which key was pressed
     if (event.key === 'ArrowUp') {
         // Inflate balloon (increase size by 10%)
-        currentSize *= 1.1;
-        updateBalloonSize();
-    } 
+        const currentSize = parseFloat(balloon.style.fontSize);
+        balloon.style.fontSize = (currentSize * 1.1) + "px";
+    } else if (event.key === "ArrowDown")
