@@ -52,3 +52,7 @@ document.addEventListener('keydown', function (event) {
 
 const tabLinks = document.querySelectorAll("#tabbed-layout ul li a");
 const tabs = document.querySelectorAll("#tabbed-contents div");
+
+// Function to hide all tabs and then show the active tab
+function showTab(index) {
+    tabs.forEach((tab, i) => {
