@@ -62,3 +62,7 @@ function showTab(index) {
     }
 });
 }
+
+// Initialize: Show the first tab by default
+showTab(0);
+
