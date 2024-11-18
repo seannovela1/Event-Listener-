@@ -55,4 +55,10 @@ const tabs = document.querySelectorAll("#tabbed-contents div");
 
 // Function to hide all tabs and then show the active tab
 function showTab(index) {
-    tabs.forEach((tab, i) => {
+    tabs.forEach((tab, i) => { if (i === index) {
+        tab.style.display = "block"; // Show the active tab
+    } else {
+        tab.style.display = "none"; // Hide inactive tabs
+    }
+});
+}
