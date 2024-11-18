@@ -66,3 +66,6 @@ function showTab(index) {
 // Initialize: Show the first tab by default
 showTab(0);
 
+// Add event listeners to each tab link
+tabLinks.forEach((link, index) => {
+    link.addEventListener("click", function(event) 
