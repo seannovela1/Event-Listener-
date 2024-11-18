@@ -68,4 +68,11 @@ showTab(0);
 
 // Add event listeners to each tab link
 tabLinks.forEach((link, index) => {
-    link.addEventListener("click", function(event) 
+    link.addEventListener("click", function(event) {
+        // Prevent the default action of the link (which is navigating)
+        event.preventDefault();
+        // Show the corresponding tab
+        showTab(index);
+    });
+});
+ 
