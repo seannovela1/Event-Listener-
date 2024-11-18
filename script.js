@@ -46,3 +46,9 @@ document.addEventListener('keydown', function (event) {
         balloon.style.fontSize = (currentSize * 0.9) + "px";
     }
 });
+
+
+// When a tab link is clicked, display the corresponding tab's content and hide the others.
+
+const tabLinks = document.querySelectorAll("#tabbed-layout ul li a");
+const tabs = document.querySelectorAll("#tabbed-contents div");
